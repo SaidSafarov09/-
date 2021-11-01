@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Верстка</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <a href="index.html"><span>iMusic</span></a>
+    </div>
+    <div id="about">
+        <a href="opp.html" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+        <a href="benefit.html" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+        <a href="contacts.html" onclick="slowScroll('#contacts')" title='Контакты'>Контакты</a>
+        <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+        <a href="#" onclick="slowScroll('facebook')"><img src="icon1.png"></a>
+        <a href="#" onclick="slowScroll('instagram')"><img src="icon2.png"></a>
+        <a href="#" onclick="slowScroll('twitter')"><img src="icon3.png"></a>
+        <a href="#" onclick="slowScroll('vk')"><img src="icon4.png"></a>
+    </div>
+</header>
+<div id="top">
+    <h1>Музыка</h1>
+    <h3>как смысл жизни!</h3>
+    <div class="follow">
+        <a href="#contacts" class="button">
+            <span class="btn-line btn-top"></span>
+            <span class="btn-line btn-right"></span>
+            <span class="btn-line btn-bottom"></span>
+            <span class="btn-line btn-left"></span>
+            <h5>Присоединяйся</h5>
+        </a>
+    </div>
+</div>
+<div id="main">
+    <div class="intro">
+        <h2>Наши услуги помогут вам!</h2>
+        <span>Большой выбор того, что может вам пригодиться</span>
+    </div>
+    <div class="text">
+        <span>В этом году планируем грандиозное мероприятие
+для всех любителей живой музыки.<br>
+Мы усердно трудились и готовы поделиться с Вами нашими успехами.
+На нашем отчетном концерте Вы услышите известные композиции
+любимых групп, в исполнении наших учеников и преподавателей,
+услышите истории из жизни школы, и еще кое-что интересное, но это сюрприз!<br><br>
+До встречи на концерте!</span>
+    </div>
+</div>
+<div id="overview">
+    <h2>Преимущества</h2>
+    <h4>С нами все проще</h4>
+<div class="img">
+    <img src="https://live-pretty.ru/wp-content/uploads/2019/08/geert-pieters-8QrPJ3Kfie4-unsplash-2-825x500.jpg" alt="" width="240" height="200">
+    <span>Изучение игры на фортепиано для начинающих</span>
+</div>
+<div class="img">
+    <img src="https://goronok.ru/wp-content/uploads/2018/12/Valentin-Belozertsev.jpg" alt="" width="240" height="200">
+    <span>Обучение скрипке с нуля</span>
+</div>
+<div class="img">
+    <img src="https://sun9-51.userapi.com/c853528/v853528149/161f27/bgSOKPOEUkk.jpg" alt="" width="240" height="200">
+    <span>Уроки игры на барабанах, для профессионалов и новичков</span>
+</div>
+<div class="img">
+    <img src="https://www.gitarrebass.de/wp-content/uploads/2017/10/beschichtete-Saiten-3.jpg" alt="" width="240" height="200">
+    <span>Уроки гитары для всех</span>
+</div>
+</div>
+<div  id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input" action="index.html" method="post">
+        <label for="name">Имя<span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта<span>*</span></label><br>
+        <input type="text" placeholder="Введите email" name="email" id="email">
+        <label for="message">Сообщение<span>*</span></label><br>
+        <textarea type="text" placeholder="Введите сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+</div>
+<div id="faq">
+    <div>
+        <img src="http://vk.com/images/emoji/D83CDDF7D83CDDFA_2x.png">
+        <span class="title">&nbsp Оплата</span><br>
+        <span class="heading">Как будет проходить оплата?</span>
+        <p>Покупатель увидит знакомые и привычные способы: банковские карты, которыми уже платил, свой интернет-банк или электронный кошелёк.</p>
+        <img src="http://vk.com/images/emoji/D83CDDECD83CDDE7_2x.png">
+        <span class="title">&nbsp Payment</span><br>
+        <span class="heading">How will the payment be processed?</span>
+        <p>The buyer will see familiar and familiar ways: bank cards that have already been paid for, their online banking or e-wallet.</p>
+        <img src="http://vk.com/images/emoji/D83CDDE9D83CDDEA_2x.png">
+        <span class="title">&nbsp Zahlung</span><br>
+        <span class="heading">Wie wird die Zahlung stattfinden?</span>
+        <p>Der Käufer wird vertraute und vertraute Wege sehen: Bankkarten, die er bereits bezahlt hat, seine Online-Bank oder elektronische Geldbörse.</p>
+    </div>
+    <div>
+        <span class="title">Информация</span><br>
+        <span class="heading">Как будет проходить оплата?</span>
+        <p>Покупатель увидит знакомые и привычные способы: банковские карты, которыми уже платил, свой интернет-банк или электронный кошелёк.</p>
+        <span class="title">Information</span><br>
+        <span class="heading">How will the payment be processed?</span>
+        <p>The buyer will see familiar and familiar ways: bank cards that have already been paid for, their online banking or e-wallet.</p>
+        <span class="title">Information</span><br>
+        <span class="heading">Wie wird die Zahlung stattfinden?</span>
+        <p>Der Käufer wird vertraute und vertraute Wege sehen: Bankkarten, die er bereits bezahlt hat, seine Online-Bank oder elektronische Geldbörse.</p>
+        </div>
+    <div>
+        <span class="title">Гарантии</span><br>
+        <span class="heading">Как будет проходить оплата?</span>
+        <p>Покупатель увидит знакомые и привычные способы: банковские карты, которыми уже платил, свой интернет-банк или электронный кошелёк.</p>
+        <span class="title">Guarantee</span><br>
+        <span class="heading">How will the payment be processed?</span>
+        <p>The buyer will see familiar and familiar ways: bank cards that have already been paid for, their online banking or e-wallet.</p>
+        <span class="title">Garantie</span><br>
+        <span class="heading">Wie wird die Zahlung stattfinden?</span>
+        <p>Der Käufer wird vertraute und vertraute Wege sehen: Bankkarten, die er bereits bezahlt hat, seine Online-Bank oder elektronische Geldbörse.</p>    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+        function slowScroll(id) {
+        $('html,body').animate({
+          scrollTop: $(id).offset().top
+        },500);
+    }
+
+    $(document).on("scroll", function () {
+    if($(window).scrollTop()==0)
+        $("header").removeClass("fixed");
+    else
+        $("header").attr("class","fixed");
+    });
+</script>
+</body>
+</html>
+
+

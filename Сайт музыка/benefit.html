@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Преимущества</title>
+    <link rel="stylesheet" href="benefit.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <a href="index.html"><span>iMusic</span></a>
+    </div>
+    <div id="about">
+        <a href="opp.html" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+        <a href="benefit.html" onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+        <a href="contacts.html" onclick="slowScroll('#contacts')" title='Контакты'>Контакты</a>
+        <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+        <a href="#" onclick="slowScroll('facebook')"><img src="icon1.png" alt=""></a>
+        <a href="#" onclick="slowScroll('instagram')"><img src="icon2.png" alt=""></a>
+        <a href="#" onclick="slowScroll('twitter')"><img src="icon3.png" alt=""></a>
+        <a href="#" onclick="slowScroll('vk')"><img src="icon4.png" alt=""></a>
+    </div>
+</header>
+<div id="top">
+    <h1>Преимущества</h1>
+</div>
+<div class="wrapper">
+    <h2>Проводник в мир музыкальных традиций и инноваций </h2>
+    <h3 class="text-typing">Для тех, кто ценит качество!<br>Для тебя!</h3>
+    <span>   Креативная iMusic курсы для взрослых и детей − являются новатором и одним из лидеров в области музыкального обучения.<br>
+        Мы специализируемся на обучении людей всех возрастов, а также людей, которые никогда раньше не занимались музыкой.
+        Вдобавок к этому мы помогаем возобновить забытые музыкальные знания, полученные, например, в детской музыкальной школе.<br>
+        Применяем креативный индивидуальный подход к каждому ученику, основываясь на Ваших потребностях, вкусовых предпочтениях,
+        от восприятия предоставляемой информации, а также от Вашего умения и навыков владения выбранной Вами дисциплины.</span>
+</div>
+<div  id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input" action="index.html" method="post">
+        <label for="name">Имя<span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта<span>*</span></label><br>
+        <input type="text" placeholder="Введите email" name="email" id="email">
+        <label for="message">Сообщение <span>*</span></label><br>
+        <textarea type="text" placeholder="Введите сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+</div>
+<footer>
+    <div class="footer-content">
+        <h3>iMusic</h3>
+        <p>музыкальное пространство для каждого</p>
+        <p>присоединяйся к нашей команде</p>
+        <div class="soc">
+            <a href="#"><img src="icon1.png" alt=""></a>
+            <a href="#"><img src="icon2.png" alt=""></a>
+            <a href="#"><img src="icon3.png" alt=""></a>
+            <a href="#"><img src="icon4.png" alt=""></a>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+        $('html,body').animate({
+            scrollTop: $(id).offset().top
+        },500);
+    }
+
+    $(document).on("scroll", function () {
+        if($(window).scrollTop()==0)
+            $("header").removeClass("fixed");
+        else
+            $("header").attr("class","fixed");
+    });
+</script>
+</body>
+</html>
