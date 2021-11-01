@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+	height: 100vh;
+	background: linear-gradient(180deg, #2e3440 6.98%, rgba(56, 64, 74, 0.5) 51.04%, #2e3440 90.19%), url(background.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 60%;
+}
+
+/*Style for navigation*/
+.navigation {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+.menu {
+	display: flex;
+}
+
+.nav {
+	display: flex;
+	list-style: none;
+}
+
+.nav li a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 30px 0 0;
+	font-size: 18px;
+}
+
+.icon li a {
+	margin: 0 20px 0 0;
+}
+
+.logo {
+	font-size: 40px;
+	font-family: 'Quicksand', sans-serif;
+	color: #D4C17F;
+}
+
+.link {
+	transition: .3s;
+}
+
+.link:hover {
+	color: #D4C17F;
+}
+
+/*Style for description*/
+.description {
+	top: 30%;
+	left: 10%;
+	width: 35%;
+	position: absolute;
+}
+.photo{
+	width: 450px;
+	height: 300px;
+	float: right;
+	top: 32%;
+	right: 10%;
+	position: absolute;
+	background: linear-gradient(180deg, rgba(184, 157, 58, 0.4) 6.98%, rgba(208, 193, 141, 0) 51.04%, rgba(184, 157, 58, 0.3) 90.19%), url("desk.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.description h1 {
+	margin: 0;
+	font-size: 40px;
+	color: #d4c17f;
+}
+.description h2 {
+	margin: 0;
+	font-size: 30px;
+	color: #d4c17f;
+}
+
+.description p {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.shop {
+	background: none;
+	border: 2px solid #D4C17F;
+	text-decoration: none;
+	color: #D4C17F;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 10px 25px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: .4s;
+}
+
+.shop:hover {
+	background: #D4C17F;
+	color: #fff;
+}
+
+/*Style for end-head*/
+.post-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	position: absolute;
+	top: 92%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.social {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social li {
+	padding: 0 15px 0 0;
+}
+
+.social li a {
+	color: #c7c7c7;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+.post-nav {
+	margin-top: 30px;
+	display: flex;
+	list-style: none;
+}
+
+.post-nav li {
+	padding: 0 30px 0 0;
+}
+
+.post-nav li a {
+	color: #c7c7c7;
+	text-decoration: none;
+	font-size: 18px;
+}

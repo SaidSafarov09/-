@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(180deg, #2e3440 11.98%, rgba(56, 64, 74, 0.7) 51.04%, #2e3440 87.19%), url(complex.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+
+/*Style for navigation*/
+.navigation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px 0 0;
+    font-size: 18px;
+}
+
+.menu .stop{
+    color: #917724;
+}
+.icon li a {
+    margin: 0 20px 0 0;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    color: #D4C17F;
+}
+
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    color: #D4C17F;
+}
+/*Style for description*/
+.description {
+    top: 26%;
+    left: 10%;
+    width: 35%;
+    position: absolute;
+}
+.photo{
+    width: 500px;
+    height: 350px;
+    float: right;
+    top: 27%;
+    right: 10%;
+    position: relative;
+    display: flex;
+    background: linear-gradient(180deg, rgba(184, 157, 58, 0.4) 6.98%, rgba(208, 193, 141, 0) 51.04%, rgba(184, 157, 58, 0.3) 90.19%), url("compex1.jpeg") no-repeat center;
+    background-size: cover;
+}
+.overlay{
+    width: 2%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    background: linear-gradient(180deg, rgba(184, 157, 58, 0.4) 6.98%, rgba(208, 193, 141, 0) 51.04%, rgba(184, 157, 58, 0.3) 90.19%), url("compex2.jpeg") no-repeat center;
+    background-attachment: fixed;
+    transition: 7s linear;
+}
+.overlay:hover{
+    transition: 0s linear;
+    opacity: 0;
+}
+.description h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #d4c17f;
+}
+.description h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #d4c17f;
+    margin-top: 5px;
+}
+
+.description p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*Style for end-head*/
+.post-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    padding: 0 15px 0 0;
+}
+
+.social li a {
+    color: #c7c7c7;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.post-nav {
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+}
+
+.post-nav li {
+    padding: 0 30px 0 0;
+}
+
+.post-nav li a {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: 18px;
+}
