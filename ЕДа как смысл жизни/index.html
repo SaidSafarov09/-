@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кулинарные курсы</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+    <div id="logo" onclick="slowScroll('#top')">
+        <span>iCook</span>
+    </div>
+    <div id="about">
+        <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+        <a href="#" title="Преимущества" onclick="slowScroll('#overview')">Преимущества</a>
+        <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+        <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">Информация</a>
+    </div>
+</header>
+
+<div id="top">
+    <h1>Еда</h1>
+    <h3>как смысл жизни!</h3>
+</div>
+
+<div id="main">
+    <div class="intro">
+        <h2>Наши услуги помогут вам:</h2>
+        <span>Большой выбор того, что вам может пригодиться при готовке</span>
+    </div>
+    <div class="text">
+        <span>Приготовление десертов , от простых без выпечки, до десертов преимум класса. Научим правильно шинковать овощи и разделывать мясо. С помощью нас ты уже через пол года сможешь приготовить Тар-Тар и Утиную ножку конфи, и многое другое!
+        </span>
+    </div>
+</div>
+<div id="overview">
+    <h2>Преимущества</h2>
+    <h4>с нами проще научиться готовить</h4>
+    <div class="img">
+        <img src="https://img11.postila.ru/data/0a/80/0a/39/0a800a39b207105a47249df548a6b82816f332b6e14436d7648b5a60ba6c791b.jpg">
+        <span>Простые рецепты десертов для начинающих</span>
+    </div>
+    <div class="img">
+        <img src="https://i.artfile.me/wallpaper/30-03-2018/1920x1080/eda-picca-vetchina-masliny-1321831.jpg">
+        <span>Простые рецепты блюд для начинающих</span>
+    </div>
+</div>
+
+<div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+        <label for="name">Имя <span>*</span></label><br>
+        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+        <label for="email">Ваша почта <span>*</span></label><br>
+        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение <span>*</span></label><br>
+        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+        <div id="mess_send" class="btn">Отправить</div>
+    </form>
+</div>
+
+<div id="faq">
+    <div>
+        <span class="title">Оплата<br></span>
+        <span class="heading">Как будет проходить оплата?</span>
+        <p>Оплата будет проходить через банковскую карту, либо переводом на сбербанк онлайн, с дальнейшей отправкой скриншота о платеже</p>
+        <span class="title">Оплата<br></span>
+        <span class="heading">Как будет проходить оплата?</span>
+        <p>Оплата будет проходить через банковскую карту, либо переводом на сбербанк онлайн, с дальнейшей отправкой скриншота о платеже</p>
+        <span class="title">Оплата<br></span>
+        <span class="heading">Как будет проходить оплата?</span>
+        <p>Оплата будет проходить через банковскую карту, либо переводом на сбербанк онлайн, с дальнейшей отправкой скриншота о платеже</p>
+    </div>
+    <div>
+        <span class="title">Информация</span><br>
+        <span class="heading">Что входит в курс?</span>
+        <p>В курс входит обучение по готовке различных блюд и блюд кухни различных стран мира. <b>Первый урок бесплатный!!!</b></p>
+        <span class="title">Информация</span><br>
+        <span class="heading">Что входит в курс?</span>
+        <p>В курс входит обучение по готовке различных блюд и блюд кухни различных стран мира. <b>Первый урок бесплатный!!!</b></p>
+        <span class="title">Информация</span><br>
+        <span class="heading">Что входит в курс?</span>
+        <p>В курс входит обучение по готовке различных блюд и блюд кухни различных стран мира. <b>Первый урок бесплатный!!!</b></p>
+    </div>
+    <div>
+        <span class="title">Гарантии</span><br>
+        <span class="heading">Какие мы даем гарантии?</span>
+        <p>Никаких! Шутка :) , если после наших курсов вы не устроитесь в самый крутой ресторан в галактике, то мы вернем вам деньги!</p>
+        <span class="title">Гарантии</span><br>
+        <span class="heading">Какие мы даем гарантии?</span>
+        <p>Никаких! Шутка :) , если после наших курсов вы не устроитесь в самый крутой ресторан в галактике, то мы вернем вам деньги!</p>
+        <span class="title">Гарантии</span><br>
+        <span class="heading">Какие мы даем гарантии?</span>
+        <p>Никаких! Шутка :) , если после наших курсов вы не устроитесь в самый крутой ресторан в галактике, то мы вернем вам деньги!</p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+    $(document).on("scroll", function () {
+        if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+        else
+            $("header").attr("class", "fixed");
+    });
+</script>
+</body>
+</html>
